@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #004dda;
+    --dark: #212133;
+    --light: #33303d;
+    --grey: #2b2933;
+    --default-pad: 2.5rem;
+    --medium-pad: calc(var(--default-pad) / 2);
+    --small-pad: calc(var(--medium-pad) / 2);
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--dark);
+    display: flex;
+    background-color: var(--grey);
+    min-height: 100%;
+}
+
+.topnav-menu,
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menus {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    padding: var(--default-pad);
+}
+
+.mainnav {
+    padding: var(--medium-pad) 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+}
+
+.mainnav>a {
+    padding-left: var(--default-pad);
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.topnav {
+    background-color: #2b2933;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--medium-pad) var(--default-pad);
+}
+
+.topnav-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+main {
+    padding: var(--default-pad);
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-pad);
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--medium-pad);
+    background-color: var(--light);
+}
+
+.separate {
+    width: 1px;
+    border-left: 2px solid var(--grey);
+    align-self: stretch;
+}
+
+.mainnav {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: var(--small-pad) var(--medium-pad)
+}
+
+
+.charts {
+    display: flex;
+    gap: var(--default-pad);
+    width: 100%;
+}
+
+.chart {
+    flex-grow: 1;
+
+}
+
+.number {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+.menus .menu:first-child {
+    
+    border-bottom: 1px solid var(--grey);
+    border-top: 1px solid #474747;
+    border-right: 1px solid #474747;
+    padding: 0.3rem;
+    border-bottom: 1px solid #474747;
+}
+
+.menus .menu:last-child {
+    position: fixed;
+    left: var(--small-pad);
+    bottom: var(--medium-pad);
+    padding: 0.3rem;
+    border-bottom: 1px solid #474747;
+    border-top: 1px solid #474747;
+    border-right: 1px solid #474747;
+    border-left: 1px solid #474747;
+
+}
+
+.tip {
+
+    max-height: 25px;
+    max-width: 25px;
+    margin-right: 0.5rem;
+    
+}
