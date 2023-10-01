@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #004dda;
+    --primary-color: #f1e243;
     --dark: #212133;
     --light: #33303d;
     --grey: #2b2933;
@@ -10,6 +10,8 @@
 
 html {
     height: 100%;
+  
+    
 }
 
 html,
@@ -149,4 +151,18 @@ main {
     max-width: 25px;
     margin-right: 0.5rem;
     
+}
+ /*começando a inserir responsividade*/
+@media all and(max-width:480px){
+    body   {
+
+}
+.menu{   
+    padding: var(--medium-pad) 0 0;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 50px 50px;
+
+}
+
 }
