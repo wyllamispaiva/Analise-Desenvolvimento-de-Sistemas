@@ -195,9 +195,7 @@ form {
 }
  /*começando a inserir responsividade*/
 @media all and(max-width:480px){
-    body   {
-
-}
+ 
 .menu{   
     padding: var(--medium-pad) 0 0;
     display: grid;  
