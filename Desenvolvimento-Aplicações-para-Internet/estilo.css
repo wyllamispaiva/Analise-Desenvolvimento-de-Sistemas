@@ -43,6 +43,7 @@ body {
 
 .menu {
     padding: var(--default-pad);
+    color: #FFFFFF;
 }
 
 .mainnav {
@@ -50,6 +51,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--light);
+}
+a {
+    color: #FFFFFF;
 }
 
 .mainnav>a {
@@ -66,6 +70,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: var(--medium-pad) var(--default-pad);
+    
 }
 
 .topnav-menu li {
@@ -86,6 +91,7 @@ main {
     align-items: center;
     padding: var(--medium-pad);
     background-color: var(--light);
+    color: #FFFFFF;
 }
 
 .separate {
@@ -113,10 +119,45 @@ main {
     width: 100%;
 }
 
-.chart {
-    flex-grow: 1;
+/* Estilo para o formulário */
+form {
+    max-width: 49%;
+    margin: -1 auto;
+    color: #FFFFFF;
+  }
+  
+  /* Estilo para as etiquetas (labels) */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Estilo para os campos de entrada (inputs) e seleção (select) */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 200%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para o botão de envio (submit) */
+  button[type="submit"] {
+    background-color: #f1e243; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de envio quando hover (mouse em cima) */
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo azul escuro quando hover */
+  }
 
-}
 
 .number {
     color: var(--primary-color);
