@@ -20,13 +20,13 @@ Inicio
     somatorioMedias := 0
    para disciplina de 1 até qtdDisciplinas faça
 
-      maiorMedia := 0 // Inicializa a maior média para a nova disciplina
-      menorMedia := 11 // Inicializa a menor média para a nova disciplina
+      maiorMedia := 0 //  maior média para a nova disciplina
+      menorMedia := 11 //  menor média para a nova disciplina
 
-      mediaDisciplina := 0 // Zera a média da disciplina
-      aprovados := 0 // Zera a quantidade de alunos aprovados na turma
-      reprovados := 0 // Zera a quantidade de alunos reprovados na turma
-      final := 0 // Zera a quantidade de alunos na final na turma
+      mediaDisciplina := 0
+      aprovados := 0 
+      reprovados := 0 
+      final := 0 
 
       Escreval("Digite o nome da disciplina: ")
       Leia(nomeDisciplina)
@@ -41,26 +41,26 @@ Inicio
          Leia(segundaNota)
          mediaAluno := (primeiraNota + segundaNota) / 2
          mediaDisciplina := mediaDisciplina + mediaAluno
-         se mediaAluno < 4 então
+         se mediaAluno < 4 entao
             Escreval("Reprovado por média")
             reprovados := reprovados + 1
          senão
-            se mediaAluno < 7 então
+            se mediaAluno < 7 entao
                Escreval("Aguardando final")
                final := final + 1
             senão
-               se mediaAluno >= 7 então
+               se mediaAluno >= 7 entao
                   Escreval("Aprovado por média")
                   aprovados := aprovados + 1
                fimse
             fimse
          fimse
 
-         se mediaAluno > maiorMedia então
+         se mediaAluno > maiorMedia entao
             maiorMedia := mediaAluno
          fimse
 
-         se mediaAluno < menorMedia então
+         se mediaAluno < menorMedia entao
             menorMedia := mediaAluno
          fimse
 
@@ -70,6 +70,7 @@ Inicio
 
 
       Escreval("#### RESUMO DA DISCIPLINA ####")
+      Escreval("")
       Escreval("QTD TOTAL DE ALUNOS:", qtdAlunos)
       Escreval("Disciplina:", nomeDisciplina)
       Escreval("MÉDIA GERAL DA DISCIPLINA:", mediaTurma)
@@ -78,16 +79,17 @@ Inicio
       Escreval("QTD ALUNOS REPROVADOS:", reprovados)
       Escreval("QTD ALUNOS NA FINAL:", final)
       Escreval("QTD ALUNOS APROVADOS:", aprovados)
+        Escreval("")
 
-      // Atualize o somatório das médias da disciplina
 
 
    fimpara
 
-   // Calcule a média geral da turma após o loop de disciplinas
+   // média geral da turma após o loop de disciplinas
    mediaGeral := somatorioMedias / qtdDisciplinas
-
+  Escreval("")
    Escreval("#### RESUMO DA TURMA ####")
+     Escreval("")
    Escreval("TURMA:", nomeDaTurma)
    Escreval("QTD DE DISCIPLINAS:", qtdDisciplinas)
    Escreval("MÉDIA GERAL DA TURMA:", mediaGeral)
